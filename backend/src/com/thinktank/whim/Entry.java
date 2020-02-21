@@ -1,6 +1,6 @@
-package com.rezaulkarim.whimentry;
+package com.thinktank.whim;
 
-public class Inventory {
+public class Entry {
 	private int orderNumber;
 	private int barCode;
 	private int quantity;
@@ -10,7 +10,7 @@ public class Inventory {
 	
 	
 	
-	private Inventory(InventoryBuilder builder) {
+	private Entry(EntryBuilder builder) {
 		this.orderNumber = builder.orderNumber;
 		this.barCode = builder.barCode;
 		this.quantity = builder.quantity;
@@ -37,7 +37,7 @@ public class Inventory {
 	}
 	
 	
-	public static class InventoryBuilder{
+	public static class EntryBuilder{
 		private int orderNumber;
 		private int barCode;
 		private int quantity;
@@ -46,23 +46,23 @@ public class Inventory {
 		private String type = "";
 		
 		
-		public InventoryBuilder(int orderNumber, int barCode, int quantity) {
+		public EntryBuilder(int orderNumber, int barCode, int quantity) {
 			this.orderNumber = orderNumber;
 			this.barCode = barCode;
 			this.quantity = quantity;
 		}
 		
-		public InventoryBuilder setName(String name) {
+		public EntryBuilder setName(String name) {
 			this.name = name;
 			return this;
 		}
-		public InventoryBuilder setType(String type) {
+		public EntryBuilder setType(String type) {
 			this.type = type;
 			return this;
 		}
 		
-		public Inventory build() {
-			return new Inventory(this);
+		public Entry build() {
+			return new Entry(this);
 		}
 	}
 }
