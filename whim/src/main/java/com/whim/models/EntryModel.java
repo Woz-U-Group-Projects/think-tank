@@ -6,7 +6,7 @@ public class EntryModel {
 	protected Long barCode;
 	protected String name;
 	protected String type;
-	protected int quantity;
+	protected Integer quantity;
 	
 	EntryModel(Long orderNumber, Long barCode, String name, String type, Integer quantity){
 		this.orderNumber = orderNumber;
