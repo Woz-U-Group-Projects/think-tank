@@ -4,7 +4,7 @@ public class SentModel extends EntryModel{
 	
 	
 	
-	SentModel(int orderNumber, int barCode, String name, String type, int quantity){
+	SentModel(Long orderNumber, Long barCode, String name, String type, Integer quantity){
 		super(orderNumber,barCode,name,type,quantity);
 		
 	}

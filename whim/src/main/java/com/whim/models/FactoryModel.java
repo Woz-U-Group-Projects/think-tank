@@ -4,7 +4,7 @@ public class FactoryModel extends EntryModel {
 	
 	private String value;
 	
-	public FactoryModel(int orderNumber, int barCode, String name, String type, int quantity, String value){
+	public FactoryModel(Long orderNumber, Long barCode, String name, String type, Integer quantity, String value){
 		super(orderNumber,barCode,name,type,quantity);
 		this.value = value;
 	

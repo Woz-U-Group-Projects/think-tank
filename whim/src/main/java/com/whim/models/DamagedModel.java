@@ -4,7 +4,7 @@ public class DamagedModel extends EntryModel{
 	
 	
 	
-	DamagedModel(int orderNumber, int barCode, String name, String type, int quantity){
+	DamagedModel(Long orderNumber, Long barCode, String name, String type, Integer quantity){
 		super(orderNumber,barCode,name,type,quantity);
 		
 	}

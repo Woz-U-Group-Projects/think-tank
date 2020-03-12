@@ -4,7 +4,7 @@ public class ReceivedModel extends EntryModel{
 	
 	
 	
-	ReceivedModel(int orderNumber, int barCode, String name, String type, int quantity){
+	ReceivedModel(Long orderNumber, Long barCode, String name, String type, Integer quantity){
 		super(orderNumber,barCode,name,type,quantity);
 		
 	}

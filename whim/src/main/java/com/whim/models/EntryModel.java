@@ -2,13 +2,13 @@ package com.whim.models;
 
 public class EntryModel {
 	
-	protected int orderNumber;
-	protected int barCode;
+	protected Long orderNumber;
+	protected Long barCode;
 	protected String name;
 	protected String type;
 	protected int quantity;
 	
-	EntryModel(int orderNumber, int barCode, String name, String type, int quantity){
+	EntryModel(Long orderNumber, Long barCode, String name, String type, Integer quantity){
 		this.orderNumber = orderNumber;
 		this.barCode = barCode;
 		this.name = name;
@@ -16,19 +16,19 @@ public class EntryModel {
 		this.quantity = quantity;
 	}
 
-	public int getOrderNumber() {
+	public Long getOrderNumber() {
 		return orderNumber;
 	}
 
-	public void setOrderNumber(int orderNumber) {
+	public void setOrderNumber(Long orderNumber) {
 		this.orderNumber = orderNumber;
 	}
 
-	public int getBarCode() {
+	public Long getBarCode() {
 		return barCode;
 	}
 
-	public void setBarCode(int barCode) {
+	public void setBarCode(Long barCode) {
 		this.barCode = barCode;
 	}
 
@@ -48,11 +48,11 @@ public class EntryModel {
 		this.type = type;
 	}
 
-	public int getQuantity() {
+	public Integer getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 	
