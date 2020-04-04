@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Add Inventory</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<h3>Insert item information below:</h3>
+	<form action="#" th:action="@{/inserted}" th:object="${factorymodel}" method="post" >
+	<input th:field="*{orderNumber}" placeholder="Order Number"/>
+	<input th:field="*{barCode}" placeholder="Barcode"/><br>
+	<input th:field="*{name}" placeholder="Item Name"/>
+	<input th:field="*{type}" placeholder="Item Type"/><br>
+	<input th:field="*{quantity}" placeholder="Quantity"/><br>
+	<input th:field="*{value}" type="radio" id="sent" name="sent" value="sent"/>
+	<label for="sent">Sent</label>
+	<input th:field="*{value}" type="radio" id="received" name="received" value="received"/>
+	<label for="received">Received</label>
+	<input th:field="*{value}" type="radio" id="damaged" name="damaged" value="damaged"/>
+	<label for="damaged">Damaged</label><br>
+	<button>Submit</button>
+	</form><br>
+	<form action="#" th:action="@{/home}" method="post"><button>Back</button></form>
+	
+	
+</body>
+</html>

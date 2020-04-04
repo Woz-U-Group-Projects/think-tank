@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Added</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Thank you!</h1>
+<h3>Your item has been stored to <span th:text="${factorymodel.value}"></span> category</h3>
+<form action="#" th:action="@{/home}" method="post"><button>Home</button></form>
+</body>
+</html>
