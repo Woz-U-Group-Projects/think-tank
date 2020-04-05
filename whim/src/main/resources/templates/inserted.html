@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<title>Added</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Inserted</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
-<h1>Thank you!</h1>
-<h3>Your item has been stored to <span th:text="${factorymodel.value}"></span> category</h3>
-<form action="#" th:action="@{/home}" method="post"><button>Home</button></form>
+
+    <BODY text=#000000 vLink=#ffccoo aLink=#ffff00 link=#ffffff>
+        <div class="center"> 
+    <h2>Thank you!</h2>
+    <h3>Your item has been stored <span th:text="${factorymodel.value}"></span></h3>
+    <p>Go to <a href="/index">home</a> page</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sent.html">Sent</a></li>
+            <li><a href="received.html">Received</a></li>
+            <li><a href="damaged.html">Damaged</a></li>
+        </ul>
+    </nav>
 </body>
+
 </html>

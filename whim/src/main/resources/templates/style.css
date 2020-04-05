@@ -1,0 +1,43 @@
+body {
+  background-color: grey;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 6px;
+  cursor: pointer;
+}
+
+.button2 {
+  padding: 12px 28px;
+}
+
+nav {
+  position: absolute;
+  top: 0px;
+}

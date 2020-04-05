@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<title>Categories</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Categories</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body>
-<h3>Please select a category</h3>
-<form action="#" th:action="@{/sent}" method="post"><button>Sent</button></form><br>
-<form action="#" th:action="@{/received}" method="post"><button>Received</button></form><br>
-<form action="#" th:action="@{/damaged}" method="post"><button>Damaged</button></form><br>
-<p>Go to <a href="/home">home</a> page</p>
+
+<BODY text=#000000 vLink=#ffccoo aLink=#ffff00 link=#ffffff>
+    <div class="center">
+        <h2>Please select a category</h2>
+        <form action="#" th:action="@{/sent}" method="post"><button class="button button2"><a
+                    href="./sent.html">Sent</a></button></form>
+        <form action="#" th:action="@{/received}" method="post"><button class="button button2"><a
+                    href="./received.html">Received</a></button></form>
+        <form action="#" th:action="@{/damaged}" method="post"><button class="button button2"><a
+                    href="./damaged.html">Damaged</a></button></form>
+
+        <p>Go to <a href="index.html">Home</a> page</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sent.html">Sent</a></li>
+            <li><a href="received.html">Received</a></li>
+            <li><a href="damaged.html">Damaged</a></li>
+        </ul>
+    </nav>
+
 </body>
+
 </html>

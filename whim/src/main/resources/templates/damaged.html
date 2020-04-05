@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Damaged</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+    <BODY text=#000000 vLink=#ffccoo aLink=#ffff00 link=#ffffff>
+        <div class="center">
+            <h2>Damaged</h2>
+            <br>
+            <h3>Insert item information below:</h3>
+            <form action="#" th:action="@{/inserted}" th:object="${factorymodel}" method="post">
+                <input th:field="*{orderNumber}" placeholder="Order Number" />
+                <input th:field="*{barCode}" placeholder="Barcode" /><br>
+                <input th:field="*{name}" placeholder="Item Name" />
+                <input th:field="*{type}" placeholder="Item Type" /><br>
+                <input th:field="*{quantity}" placeholder="Quantity" /><br>
+                <form action="#" th:action="@{/entry}" method="post"><button class="button button2">Submit</button>
+                </form><br>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="sent.html">Sent</a></li>
+                        <li><a href="received.html">Received</a></li>
+                        <li><a href="damaged.html">Damaged</a></li>
+                    </ul>
+                </nav>
+    </body>

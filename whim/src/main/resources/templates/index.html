@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+</head>
+
+<body>
+
+    <BODY text=#000000 vLink=#ffccoo aLink=#ffff00 link=#ffffff></BODY>
+    <div class="center">
+        <h2>Welcome to WHIM</h2>
+        <h4>WHIM is a lightweight easy to use way to help you <br>
+            control inventory. It allows the user to add or remove<br>
+            products with three basic categories; Received, Sent and/or<br>
+            Damaged.
+        </h4>
+        <h6>WHIM <br> WareHouse Inventory Management</h6><br>
+
+
+        
+        <form action="#" th:action="@{/categories}" method="post"><button class="button button2"><a
+                    href="./categories.html"></a>Categories</button></form>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sent.html">Sent</a></li>
+            <li><a href="received.html">Received</a></li>
+            <li><a href="damaged.html">Damaged</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
