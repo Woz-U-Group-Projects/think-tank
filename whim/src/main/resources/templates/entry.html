@@ -2,39 +2,45 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>Add Inventory</title>
+	<title>Entry</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
-<body>
+<BODY text=#000000 aLink=#0000ff link=#000000>
 	<div class="center">
 		<h3>Insert item information below:</h3>
 		<form action="#" th:action="@{/inserted}" th:object="${factorymodel}" method="post">
-			<input th:field="*{orderNumber}" placeholder="Order Number" />
-			<input th:field="*{barCode}" placeholder="Barcode" /><br>
-			<input th:field="*{name}" placeholder="Item Name" />
-			<input th:field="*{type}" placeholder="Item Type" /><br>
-			<input th:field="*{quantity}" placeholder="Quantity" /><br>
+			<ul>
+
+				<li> <input th:field="*{orderNumber}" placeholder="Order Number" /></li>
+				<li><input th:field="*{barCode}" placeholder="Barcode" /><br></li>
+				<li><input th:field="*{name}" placeholder="Item Name" /></li>
+				<li><input th:field="*{type}" placeholder="Item Type" /><br></li>
+				<li> <input th:field="*{quantity}" placeholder="Quantity" /></li>
+			</ul>
 			<input th:field="*{value}" type="radio" id="sent" name="sent" value="sent" />
 			<label for="sent">Sent</label>
 			<input th:field="*{value}" type="radio" id="received" name="received" value="received" />
 			<label for="received">Received</label>
 			<input th:field="*{value}" type="radio" id="damaged" name="damaged" value="damaged" />
-			<label for="damaged">Damaged</label><br>
-			<button>Submit</button>
+			<label for="damaged">Damaged</label>
 		</form><br>
-		<form action="#" th:action="@{/index}" method="post"><button>Back</button></form>
+		<form action="#" th:action="@{/entry}" method="post"><button class="button button2">Submit</button>
+		</form><br>
+
 	</div>
 	<nav>
 		<ul>
+			<li>QUICK LINKS</li>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="categories.html">Categories</a></li>
 			<li><a href="sent.html">Sent</a></li>
 			<li><a href="received.html">Received</a></li>
 			<li><a href="damaged.html">Damaged</a></li>
 		</ul>
 	</nav>
+	<script src="style.js"></script>
 </body>
 
 </html>

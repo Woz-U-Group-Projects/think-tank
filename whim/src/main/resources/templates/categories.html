@@ -2,33 +2,46 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Categories</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Categories</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script></script>
 </head>
 
-<BODY text=#000000 vLink=#ffccoo aLink=#ffff00 link=#ffffff>
-    <div class="center">
-        <h2>Please select a category</h2>
-        <form action="#" th:action="@{/sent}" method="post"><button class="button button2"><a
-                    href="./sent.html">Sent</a></button></form>
-        <form action="#" th:action="@{/received}" method="post"><button class="button button2"><a
-                    href="./received.html">Received</a></button></form>
-        <form action="#" th:action="@{/damaged}" method="post"><button class="button button2"><a
-                    href="./damaged.html">Damaged</a></button></form>
+<BODY text=#000000 aLink=#0000ff link=#000000>
+	<div class="center">
+		<h2>Please select a category</h2>
+		<form action="#" th:action="@{/sent}" method="post">
+			<button class="button button2">
+				<a href="./sent.html">Sent</a>
+			</button>
+		</form>
+		<form action="#" th:action="@{/received}" method="post">
+			<button class="button button2">
+				<a href="./received.html">Received</a>
+			</button>
+		</form>
+		<form action="#" th:action="@{/damaged}" method="post">
+			<button class="button button2">
+				<a href="./damaged.html">Damaged</a>
+			</button>
+		</form>
 
-        <p>Go to <a href="index.html">Home</a> page</p>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="sent.html">Sent</a></li>
-            <li><a href="received.html">Received</a></li>
-            <li><a href="damaged.html">Damaged</a></li>
-        </ul>
-    </nav>
+		<p>
 
+		</p>
+	</div>
+	<nav>
+		<ul>
+			<li>QUICK LINKS</li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="categories.html">Categories</a></li>
+			<li><a href="sent.html">Sent</a></li>
+			<li><a href="received.html">Received</a></li>
+			<li><a href="damaged.html">Damaged</a></li>
+		</ul>
+	</nav>
+	<script src="style.js"></script>
 </body>
 
 </html>
