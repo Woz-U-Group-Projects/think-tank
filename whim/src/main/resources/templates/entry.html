@@ -7,18 +7,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
-<BODY text=#000000 aLink=#0000ff link=#000000>
+<body text=#000000 aLink=#0000ff link=#000000>
 	<div class="center">
 		<h3>Insert item information below:</h3>
 		<form action="#" th:action="@{/inserted}" th:object="${factorymodel}" method="post">
-			<ul>
-
-				<li> <input th:field="*{orderNumber}" placeholder="Order Number" /></li>
-				<li><input th:field="*{barCode}" placeholder="Barcode" /><br></li>
-				<li><input th:field="*{name}" placeholder="Item Name" /></li>
-				<li><input th:field="*{type}" placeholder="Item Type" /><br></li>
-				<li> <input th:field="*{quantity}" placeholder="Quantity" /></li>
-			</ul>
+			 <input th:field="*{orderNumber}" placeholder="Order Number" />
+			<input th:field="*{barCode}" placeholder="Barcode" /><br>
+			<input th:field="*{name}" placeholder="Item Name" />
+			<input th:field="*{type}" placeholder="Item Type" /><br>
+			<input th:field="*{quantity}" placeholder="Quantity" />
 			<input th:field="*{value}" type="radio" id="sent" name="sent" value="sent" />
 			<label for="sent">Sent</label>
 			<input th:field="*{value}" type="radio" id="received" name="received" value="received" />
@@ -33,11 +30,10 @@
 	<nav>
 		<ul>
 			<li>QUICK LINKS</li>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="categories.html">Categories</a></li>
-			<li><a href="sent.html">Sent</a></li>
-			<li><a href="received.html">Received</a></li>
-			<li><a href="damaged.html">Damaged</a></li>
+			<li><a href="/home">Home</a></li>
+			<li><a href="/sent">Sent</a></li>
+			<li><a href="/received">Received</a></li>
+			<li><a href="/damaged">Damaged</a></li>
 		</ul>
 	</nav>
 	<script src="style.js"></script>

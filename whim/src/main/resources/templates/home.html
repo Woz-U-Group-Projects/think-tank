@@ -4,11 +4,20 @@
 <title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
-<body>
-<h3>Welcome</h3>
-<h5>to</h5>
-<h3>WHIM!</h3>
+<body text=#000000 aLink=#0000ff link=#000000>
+ <div class="center">
+            <h2>Welcome to WHIM</h2>
+            <h4>WHIM is a lightweight easy to use way to help you <br>
+                control inventory. It allows the user to add or remove<br>
+                products with three basic categories; Received, Sent and/or<br>
+                Damaged.
+            </h4>
+            <h6>WHIM <br> WareHouse Inventory Management</h6><br>
+            
 <form action="#" th:action="@{/entry}" method="post"><button>Add new item</button></form><br>
 <form action="#" th:action="@{/categories}" method="post"><button>Categories</button></form>
+ </div>
+
+	<script src="style.js"></script>
 </body>
 </html>

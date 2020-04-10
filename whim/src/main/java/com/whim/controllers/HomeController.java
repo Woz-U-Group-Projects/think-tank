@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.whim.models.DamagedModel;
 import com.whim.models.FactoryModel;
+import com.whim.models.ReceivedModel;
+import com.whim.models.SentModel;
 
 @Controller
 @RequestMapping({"/","/home"})
@@ -41,15 +44,18 @@ public class HomeController {
 	}
 	
 	@PostMapping("/sent")
-	public String sent() {
+	public String sent(@ModelAttribute SentModel sentmodel, Model model) {
+		model.addAttribute("sentmodel", sentmodel);
 		return "sent";
 	}
 	@PostMapping("/received")
-	public String received() {
+	public String received(@ModelAttribute ReceivedModel receivedmodel, Model model) {
+		model.addAttribute("receivedmodel", receivedmodel);
 		return "received";
 	}
 	@PostMapping("/damaged")
-	public String damaged() {
+	public String damaged(@ModelAttribute DamagedModel damagedmodel, Model model) {
+		model.addAttribute("damagedmodel", damagedmodel);
 		return "damaged";
 	}
 	

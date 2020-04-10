@@ -7,38 +7,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
-<body>
+<body text=#000000 vLink=#ffccoo aLink=#ffff00 link=#ffffff>
 
-    <BODY text=#000000 aLink=#0000ff link=#000000>
+  
         <div class="center">
-            <h2>Damaged</h2>
-            <br>
-            <h3>Insert item information below:</h3>
-
-            <form action="#" th:action="@{/inserted}" th:object="${factorymodel}" method="post">
-                <ul>
-                    
-                    <li> <input th:field="*{orderNumber}" placeholder="Order Number" /></li>
-                    <li><input th:field="*{barCode}" placeholder="Barcode" /><br></li>
-                    <li><input th:field="*{name}" placeholder="Item Name" /></li>
-                    <li><input th:field="*{type}" placeholder="Item Type" /><br></li>
-                    <li> <input th:field="*{quantity}" placeholder="Quantity" /></li>
-            </form>
-            </ul>
-            <form action="#" th:action="@{/entry}" method="post"><button class="button button2">Submit</button>
-            </form><br>
-
-
+            <h2>Damaged items</h2>
+            	<p>Item name: <span th:text="${damagedmodel.name}"></span>
+            	</p>
         </div>
-        <nav>
-            <ul>
-                <li>QUICK LINKS</li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="sent.html">Sent</a></li>
-                <li><a href="received.html">Received</a></li>
-                <li><a href="damaged.html">Damaged</a></li>
-            </ul>
-        </nav>
-        <script src="style.js"></script>
-    </body>
+            
+                <nav>
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/sent">Sent</a></li>
+                        <li><a href="/received">Received</a></li>
+                   </ul>
+                </nav>
+
+</body>
+</html>
