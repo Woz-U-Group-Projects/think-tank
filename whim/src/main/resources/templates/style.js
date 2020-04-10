@@ -1,4 +1,4 @@
-<SCRIPT>
+
 <!-- Hide
 
 
@@ -89,4 +89,3 @@ document.title=actualtitle+scroller
 if (document.all||document.getElementById)
 scroll()
 //-->
-</SCRIPT>

@@ -8,24 +8,40 @@
 	<script></script>
 </head>
 
-<body text=#000000 aLink=#0000ff link=#000000>
+<BODY text=#000000 aLink=#0000ff link=#000000>
 	<div class="center">
 		<h2>Please select a category</h2>
 		<form action="#" th:action="@{/sent}" method="post">
 			<button class="button button2">
-				Sent</button>
+				<a href="./sent.html">Sent</a>
+			</button>
 		</form>
 		<form action="#" th:action="@{/received}" method="post">
 			<button class="button button2">
-				Received</button>
+				<a href="./received.html">Received</a>
+			</button>
 		</form>
 		<form action="#" th:action="@{/damaged}" method="post">
 			<button class="button button2">
-				Damaged</button>
+				<a href="./damaged.html">Damaged</a>
+			</button>
 		</form>
-		<h3>Go back to <a href="/home">home</a></h3>
+
+		<p>
+
+		</p>
 	</div>
-<script src="style.js"></script>
+	<nav>
+		<ul>
+			<li>QUICK LINKS</li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="categories.html">Categories</a></li>
+			<li><a href="sent.html">Sent</a></li>
+			<li><a href="received.html">Received</a></li>
+			<li><a href="damaged.html">Damaged</a></li>
+		</ul>
+	</nav>
+	<script src="style.js"></script>
 </body>
 
 </html>

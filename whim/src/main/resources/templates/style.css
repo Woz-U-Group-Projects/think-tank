@@ -22,9 +22,9 @@ h4 {
 }
 
 .button {
-  background-color: #000000;
-  border: none;
-  color: white;
+  background-color: silver;
+  border: 0;
+  color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   display: inline-block;
